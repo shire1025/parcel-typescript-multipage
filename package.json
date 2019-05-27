@@ -1,0 +1,38 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "parcel-typescript-multipage",
+  "version": "1.0.0",
+  "description": "TypeScript app with parcel bundler.",
+  "main": "lib/parcel-typescript-multipage.js",
+  "scripts": {
+    "initByYarn": "yarn global add parcel-bundler",
+    "initByNpm": "npm install -g parcel-bundler",
+    "start": "parcel src/**/*.html --no-hmr --no-cache --no-source-maps",
+    "build": "cross-env NODE_ENV=production parcel build src/**/*.html --public-url ./",
+    "watch": "parcel watch src/**/*.html"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "cross-env": "^5.2.0",
+    "parcel-bundler": "^1.9.7",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "json5": "^2.1.0",
+    "node-sass": "^4.12.0",
+    "postcss-modules": "^1.4.1"
+  }
+}
