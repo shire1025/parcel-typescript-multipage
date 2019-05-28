@@ -4,18 +4,20 @@
     "moduleResolution": "node",
     "newLine": "LF",
     "outDir": "./lib/",
-    "target": "es5",
+    "target": "es6",
     "sourceMap": true,
     "declaration": true,
     "jsx": "preserve",
     "lib": [
-      "es2017",
+      "es5",
+      "es2015.promise",
       "dom"
     ],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": [
